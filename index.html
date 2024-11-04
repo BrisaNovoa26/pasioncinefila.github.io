@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasión Cinéfila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+<header>
+    <h1>Recomendaciones de Películas</h1>
+    <nav>
+        <ul>
+            <li><a href="#productos">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="productos" class="product-section">
+        <h2>Productos</h2>
+        <div class="product-cards">
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_942560-MLA77981459169_072024-O.webp" alt="Película 1">
+                <h3>Deadpool & Wolverine</h3>
+                <p>Deadpool y Wolverine une a estos antihéroes en una misión llena de acción y humor oscuro, enfrentando una gran amenaza juntos pese a sus diferencias.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/6a/52/df/6a52dfe2b537a4b3608b4857590b610e.jpg" alt="Película 2">
+                <h3>La momia</h3>
+                <p>La Momia sigue la historia de un explorador que accidentalmente despierta a una antigua momia egipcia, desatando una maldición que amenaza con destruirlo todo. Llena de aventura y misterio, la película mezcla acción y terror mientras los protagonistas intentan detener al ser inmortal.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sUiQCL5C7H-UQ3zG54hHokFmw3iBozg8zQ&s" alt="Película 3">
+                <h3>Orgullo y prejuicio</h3>
+                <p>Orgullo y Prejuicio cuenta la historia de Elizabeth Bennet y el Sr. Darcy, quienes, pese a sus diferencias y prejuicios, descubren el amor en medio de la sociedad inglesa del siglo XIX.</p>
+            </div>
+            <!-- Más tarjetas de películas según sea necesario -->
+        </div>
+    </section>
+
+    <section id="reseñas" class="review-section">
+        <h2>Reseñas</h2>
+        <div class="grid-reviews">
+            <div class="review">
+                <h3>Deadpool y Wolverine - CineFreak92 ★★★★☆</h3>
+                <p>En esta película llena de acción y humor, los antihéroes Deadpool y Wolverine se ven forzados a trabajar juntos para enfrentar una amenaza común. Aunque sus personalidades y métodos son opuestos—Deadpool con su estilo caótico y sarcasmo, y Wolverine con su brutalidad y seriedad—la misión que comparten los lleva a situaciones explosivas y cómicas. La película mezcla entretenimiento y adrenalina con el sello irreverente de ambos personajes.</p>
+            </div>
+            <div class="review">
+                <h3>La Momia - AventuraFanatic ★★★★☆</h3>
+                <p>Esta aventura épica sigue al explorador Rick O'Connell, quien despierta accidentalmente a una momia maldita en Egipto. El antiguo ser inmortal trae consigo una ola de destrucción y una serie de horrores, mientras busca recuperar el poder que una vez tuvo. Con una mezcla de acción, misterio y toques de terror, La Momia es una historia de lucha contra el tiempo para detener la amenaza sobrenatural antes de que consuma el mundo.</p>
+            </div>
+            <div class="review">
+                <h3>Orgullo y Prejuicio - ClásicosLover ★★★★★</h3>
+                <p>Basada en la novela de Jane Austen, esta historia clásica de amor sigue a Elizabeth Bennet y el Sr. Darcy, dos personas de personalidades opuestas que luchan contra sus propios prejuicios y los de la sociedad inglesa del siglo XIX. A medida que se conocen, enfrentan malentendidos y tensiones sociales, descubriendo gradualmente sus verdaderos sentimientos. Orgullo y Prejuicio es una reflexión sobre el amor y las barreras sociales, que captura la esencia de una época y los dilemas emocionales de sus personajes.</p>
+            </div>
+            <!-- Más reseñas según sea necesario -->
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> <!-- Reemplaza con tu Formspree ID -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Recomendación de Películas. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

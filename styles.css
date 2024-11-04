@@ -1,0 +1,179 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0288d1;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.product-section, .review-section, .contact-section {
+  padding: 40px 20px;
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Detalles y animaciones en la sección de reseñas */
+.review-section {
+  background: #f1f8e9; /* Fondo suave */
+  border-radius: 10px;
+  border: 2px solid #c8e6c9; /* Borde verde claro */
+  overflow: hidden; /* Para evitar que el contenido se desborde */
+}
+
+.grid-reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  animation: fadeIn 1s ease; /* Animación de entrada */
+}
+
+.review-card {
+  background: #ffffff;
+  border: 1px solid #81d4fa;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.5s ease; /* Animación para las tarjetas de reseña */
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilos para el botón en la sección de contacto */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-section label {
+  margin: 10px 0 5px;
+}
+
+.contact-section input, .contact-section textarea {
+  padding: 10px;
+  border: 1px solid #81d4fa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: border 0.3s ease;
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+  border-color: #0288d1;
+}
+
+.contact-section button {
+  padding: 10px;
+  background: #0288d1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Agregado para la animación */
+}
+
+.contact-section button:hover {
+  background: #039be5;
+  transform: scale(1.1); /* Animación de aumento al pasar el cursor */
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #0288d1;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
